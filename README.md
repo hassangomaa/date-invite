@@ -1,36 +1,55 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Date Invite 💖
 
-## Getting Started
+A sweet, customizable date proposal mini-app — inspired by those viral “I made a website for you” invites.
 
-First, run the development server:
+**Live demo:** deploy your own copy and share the link.
+
+## Personalize in 30 seconds
+
+Edit **`src/config/site.ts`**:
+
+| Field | What to change |
+|-------|----------------|
+| `recipient.name` | Her name (e.g. `Nourhan`) |
+| `recipient.photoUrl` | Optional photo (`/photos/her.jpg` in `public/`) |
+| `sender.name` / `sender.nameArabic` | Your name — default: **SNSN** / **سنسن** |
+| `success.message` | Final romantic line |
+| `food.options` | Cuisine choices |
+
+Everything else updates automatically.
+
+## Flow
+
+1. **Will you go on a date?** — Yes / runaway No button 😄
+2. **Are you sure?** — Confirmation
+3. **Pick date & time**
+4. **Choose food**
+5. **Success screen** — personalized summary + confetti
+
+## Run locally
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Deploy to Vercel
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/hassangomaa/date-invite)
 
-## Learn More
+Or:
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npx vercel --prod
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Stack
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Next.js 16 · React · Tailwind CSS
+- Zero backend — pure frontend magic
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+*Built with love by SNSN سنسن*
